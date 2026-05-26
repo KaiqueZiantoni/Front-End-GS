@@ -26,7 +26,7 @@ html {
     color: var(--cor-texto-principal);
     background-color: var(--cor-fundo-geral);
     line-height: 1.6;
-    scroll-behavior: smooth; /* Adicionado para a rolagem suave */
+    scroll-behavior: smooth;
 }
 
 ul { list-style: none; }
@@ -910,9 +910,9 @@ a { text-decoration: none; color: inherit; transition: var(--transicao-padrao); 
     .cartao-fluxo { padding: 2rem; }
 }
 
-/* ==========================================================================
+/* 
    ESTILOS PÁGINA SOBRE E SOLUÇÃO 
-   ========================================================================== */
+    */
    .grade-comparacao {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -989,7 +989,6 @@ a { text-decoration: none; color: inherit; transition: var(--transicao-padrao); 
     font-weight: bold;
 }
 
-/* --- 2. Disclaimer / Alerta --- */
 .caixa-alerta {
     display: flex;
     align-items: flex-start;
@@ -1093,8 +1092,10 @@ a { text-decoration: none; color: inherit; transition: var(--transicao-padrao); 
 .item-detalhe {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start; 
+    gap: 1rem; 
     font-size: 0.85rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .item-detalhe:last-child { margin-bottom: 0; }
@@ -1102,6 +1103,15 @@ a { text-decoration: none; color: inherit; transition: var(--transicao-padrao); 
 .rotulo-detalhe {
     font-weight: 600;
     color: var(--cor-texto-secundario);
+    white-space: nowrap; 
+}
+
+.valor-detalhe {
+    font-family: monospace;
+    color: var(--cor-texto-principal);
+    font-weight: 700;
+    text-align: right;
+    word-break: break-word; 
 }
 
 .item-detalhe.detalhe-coluna {
@@ -1140,6 +1150,26 @@ a { text-decoration: none; color: inherit; transition: var(--transicao-padrao); 
     border-color: var(--cor-azul-destaque);
     transform: translateY(-2px);
     box-shadow: var(--sombra-leve);
+}
+
+
+@media (max-width: 992px) {
+    .grade-apis,
+    .grade-comparacao,
+    .grade-simulador-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .item-detalhe {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .valor-detalhe {
+        text-align: left;
+    }
 }
 
 .valor-detalhe {
@@ -1430,9 +1460,9 @@ a { text-decoration: none; color: inherit; transition: var(--transicao-padrao); 
     .display-header { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
     .display-card.glass { padding: 1.5rem; }
 }
-/* ==========================================================================
-   ESTILOS NOVOS: PÁGINA DE INTEGRANTES (EQUIPE)
-   ========================================================================== */
+/* 
+   ESTILOS NOVOS: PÁGINA DE INTEGRANTES 
+    */
 
 .cartao-perfil {
     display: flex;
