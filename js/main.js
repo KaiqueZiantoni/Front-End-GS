@@ -1,9 +1,6 @@
-// Aguarda o DOM carregar completamente antes de rodar o JS
 document.addEventListener("DOMContentLoaded", () => {
     
-    // ==========================================
-    // 1. LÓGICA DO MENU MOBILE (CORRIGIDA PARA PT-BR)
-    // ==========================================
+
     const botaoMenuMobile = document.getElementById("botao-menu-mobile");
     const menuNavegacao = document.getElementById("menu-navegacao");
 
@@ -13,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Fecha o menu mobile se um link for clicado (melhoria de UX)
     const linksNavegacao = document.querySelectorAll(".menu-navegacao ul li a");
     linksNavegacao.forEach(link => {
         link.addEventListener("click", () => {
@@ -23,22 +19,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // ==========================================
-    // 2. LÓGICA DA SETA DE ROLAGEM
-    // ==========================================
+
     const setaDescer = document.querySelector('.seta-descer');
     
     if (setaDescer) {
         setaDescer.addEventListener('click', function(evento) {
-            // Previne o pulo seco do link padrão
             evento.preventDefault();
             
-            // Pega o destino pelo href da seta
             const idDestino = this.getAttribute('href');
             const secaoDestino = document.querySelector(idDestino);
 
             if (secaoDestino) {
-                // Rola até a seção suavemente
                 secaoDestino.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
