@@ -11,8 +11,6 @@
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--cor-borda);
-        color:var(--cor-azul-destaque)
-
 }
 
 .titulo-categoria-faq.margin-top {
@@ -90,10 +88,10 @@
 
 .item-faq.ativo .icone-faq {
     transform: rotate(45deg); 
-}
+
 @media (max-width: 992px) {
     .grade-faq-layout {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-}
+}}

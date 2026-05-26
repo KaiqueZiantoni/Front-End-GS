@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+
     const simResultCard = document.getElementById("sim-result");
     
     if (simResultCard) {

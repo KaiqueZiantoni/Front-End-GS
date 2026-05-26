@@ -1430,3 +1430,238 @@ a { text-decoration: none; color: inherit; transition: var(--transicao-padrao); 
     .display-header { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
     .display-card.glass { padding: 1.5rem; }
 }
+/* ==========================================================================
+   ESTILOS NOVOS: PÁGINA DE INTEGRANTES (EQUIPE)
+   ========================================================================== */
+
+.cartao-perfil {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    background-color: var(--cor-fundo-cartao);
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: var(--sombra-media);
+}
+
+.lateral-perfil {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-right: 1px dashed var(--cor-borda);
+    padding-right: 3rem;
+}
+
+.container-imagem-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 6px;
+    background: linear-gradient(135deg, var(--cor-azul-destaque), #bae6fd);
+    margin-bottom: 1.5rem;
+    box-shadow: var(--sombra-leve);
+}
+
+.imagem-perfil {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--cor-fundo-cartao);
+}
+
+.info-academica {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tag-estudante {
+    background-color: var(--cor-fundo-geral);
+    color: var(--cor-texto-secundario);
+    border: 1px solid var(--cor-borda);
+    padding: 0.35rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.redes-sociais-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.botao-rede {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: var(--transicao-padrao);
+    text-align: center;
+    width: 100%;
+}
+
+.botao-rede.linkedin {
+    background-color: #f0f9ff;
+    color: #0284c7;
+    border: 1px solid #bae6fd;
+}
+
+.botao-rede.linkedin:hover {
+    background-color: #0284c7;
+    color: #ffffff;
+}
+
+.botao-rede.github {
+    background-color: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+}
+
+.botao-rede.github:hover {
+    background-color: #334155;
+    color: #ffffff;
+}
+
+.conteudo-perfil {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-cargo {
+    align-self: flex-start;
+    background-color: #1e293b;
+    color: #f8fafc;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.conteudo-perfil h2 {
+    font-size: 2.25rem;
+    color: var(--cor-texto-principal);
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+}
+
+.badge-experiencia {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #166534;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
+}
+
+.icone-exp {
+    font-size: 1.25rem;
+}
+
+.texto-bio {
+    font-size: 1.05rem;
+    color: var(--cor-texto-secundario);
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.container-formacoes h3 {
+    font-size: 1.25rem;
+    color: var(--cor-texto-principal);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--cor-borda);
+    padding-bottom: 0.75rem;
+}
+
+.grade-formacoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.item-formacao {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: var(--cor-fundo-geral);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--cor-borda);
+    transition: var(--transicao-padrao);
+}
+
+.item-formacao:hover {
+    background-color: #ffffff;
+    box-shadow: var(--sombra-leve);
+    border-color: var(--cor-azul-destaque);
+}
+
+.item-formacao.destaque-tech { border-left: 4px solid var(--cor-azul-destaque); }
+.item-formacao.destaque-saude { border-left: 4px solid #10b981; }
+
+.icone-formacao {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.texto-formacao h4 {
+    font-size: 1rem;
+    color: var(--cor-texto-principal);
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+}
+
+.instituicao {
+    font-size: 0.8rem;
+    color: var(--cor-azul-destaque);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.detalhe-formacao {
+    font-size: 0.85rem;
+    color: var(--cor-texto-secundario);
+    line-height: 1.4;
+}
+
+@media (max-width: 992px) {
+    .cartao-perfil {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    
+    .lateral-perfil {
+        flex: auto;
+        border-right: none;
+        border-bottom: 1px dashed var(--cor-borda);
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+    
+    .redes-sociais-perfil {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .redes-sociais-perfil { flex-direction: column; }
+    .grade-formacoes { grid-template-columns: 1fr; }
+}
