@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solução | AstroPharma - Logística Orbital Preditiva</title>
+    <title>Solução e Arquitetura | AstroPharma - Logística Orbital</title>
 
     <link rel="stylesheet" href="../css/style.css">
 
@@ -28,7 +28,7 @@
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="solucao.html" class="ativo">Solução</a></li>
+                    <li><a href="solucao.html" class="ativo">Solução & APIs</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="integrantes.html">Equipe</a></li>
                     <li><a href="contato.html" class="botao botao-pequeno botao-principal">Contato</a></li>
@@ -43,8 +43,40 @@
                 <div class="texto-topo-sobre">
                     <span class="etiqueta">Tecnologia e Impacto</span>
                     <h1>Nossa Solução</h1>
-                    <p>Entenda como cruzamos inteligência geográfica orbital, algoritmos preditivos e logística avançada
-                        para transformar a distribuição global de insumos médicos.</p>
+                    <p>Entenda como cruzamos inteligência geográfica orbital, algoritmos preditivos e integração de APIs para transformar a distribuição global de insumos médicos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="inovacao" class="secao secao-inovacao">
+            <div class="caixa-principal">
+                <div class="cabecalho-secao">
+                    <h2>A Inversão do Fluxo Logístico</h2>
+                    <p>Como o AstroPharma muda o jogo da distribuição de medicamentos na Terra.</p>
+                </div>
+                
+                <div class="grade-comparacao">
+                    <div class="cartao-comparacao reativo">
+                        <h3>Modelo Tradicional Reativo</h3>
+                        <div class="indicador-status ruim">Fluxo Atual</div>
+                        <p>Movimentação de grandes volumes de medicamentos apenas <strong>após o surto ser declarado</strong> ou quando os estoques locais zeram.</p>
+                        <ul class="lista-comparacao">
+                            <li>Fretes emergenciais de alto custo</li>
+                            <li>Atrasos críticos na entrega (15+ dias)</li>
+                            <li>Desperdício por vencimento em locais errados</li>
+                        </ul>
+                    </div>
+
+                    <div class="cartao-comparacao preditivo">
+                        <h3>Modelo AstroPharma Preditivo</h3>
+                        <div class="indicador-status bom">Nossa Solução</div>
+                        <p>Identificação de gatilhos climáticos por satélite e emissão de ordens preventivas <strong>semanas antes do surto estourar</strong>.</p>
+                        <ul class="lista-comparacao">
+                            <li>Distribuição antecipatória inteligente</li>
+                            <li>Medicamento disponível antes do primeiro caso</li>
+                            <li>Otimização drástica da Supply Chain</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -77,15 +109,216 @@
                             </div>
                             <div class="metric-box">
                                 <span class="metric-label">Janela Epidemiológica</span>
-                                <span class="metric-value text-warning" id="display-window">Surto estimado em 15
-                                    dias</span>
+                                <span class="metric-value text-warning" id="display-window">Surto estimado em 15 dias</span>
                             </div>
                         </div>
                         <div class="action-box">
                             <h4>Ordem de Transferência Preventiva Gerada:</h4>
-                            <p id="display-action">Remanejando 4.500 caixas de Paracetamol, Dipirona e Sais de
-                                Reidratação Oral do CD Central para as UBS mapeadas.</p>
+                            <p id="display-action">Remanejando 4.500 caixas de Paracetamol, Dipirona e Sais de Reidratação Oral do CD Central para as UBS mapeadas.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-pipeline">
+            <div class="caixa-principal">
+                <div class="cabecalho-secao">
+                    <h2>Fluxo de Ingestão de Dados (Pipeline)</h2>
+                    <p>Como as APIs espaciais alimentam nosso motor de inteligência artificial.</p>
+                </div>
+                
+                <div class="fluxo-pipeline glass">
+                    <div class="etapa-pipeline">
+                        <div class="icone-pipeline">🛰️</div>
+                        <h4>1. Coleta via APIs</h4>
+                        <p>Requisições GET para ESA/NASA/INPE</p>
+                    </div>
+                    <div class="seta-pipeline">➔</div>
+                    <div class="etapa-pipeline destaque-pipeline">
+                        <div class="icone-pipeline">🧠</div>
+                        <h4>2. Motor IA Preditiva</h4>
+                        <p>Cruzamento de anomalias com a base do e-SUS</p>
+                    </div>
+                    <div class="seta-pipeline">➔</div>
+                    <div class="etapa-pipeline">
+                        <div class="icone-pipeline">📄</div>
+                        <h4>3. Alerta & Dossiê</h4>
+                        <p>Documentação preventiva emitida ao cliente</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-apis">
+            <div class="caixa-principal">
+                
+                <div class="caixa-alerta glass">
+                    <div class="icone-alerta">💡</div>
+                    <div class="texto-alerta">
+                        <strong>Nota de Arquitetura do Sistema (MVP):</strong> As APIs listadas abaixo representam o ecossistema real de dados que o AstroPharma utiliza. Elas possuem endpoints abertos e são integráveis para fornecer telemetria de chuva, umidade e temperatura.
+                    </div>
+                </div>
+
+                <div class="grade-apis">
+                    <div class="cartao-api glass">
+                        <div class="imagem-api">
+                            <img src="../assets/copernicos.png" alt="Logo Copernicus">
+                        </div>
+                        <div class="conteudo-api">
+                            <span class="badge-satelite">Satélites Sentinel</span>
+                            <h3>Copernicus Data Space (ESA)</h3>
+                            <p>A Agência Espacial Europeia fornece a API OData do programa Copernicus. É a fonte principal para mapeamento de temperatura do solo e anomalias de umidade.</p>
+                            <div class="detalhes-api">
+                                <div class="item-detalhe">
+                                    <span class="rotulo-detalhe">Endpoint:</span>
+                                    <span class="valor-detalhe">/odata/v1/Products</span>
+                                </div>
+                                <div class="item-detalhe">
+                                    <span class="rotulo-detalhe">Foco:</span>
+                                    <span class="valor-detalhe">Dengue e Zika</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cartao-api glass">
+                        <div class="imagem-api">
+                            <img src="../assets/gpm.png" alt="Logo NASA">
+                        </div>
+                        <div class="conteudo-api">
+                            <span class="badge-satelite">Missão GPM</span>
+                            <h3>NASA POWER & GPM API</h3>
+                            <p>Projeto de Ciência Aberta da NASA. O sensor GPM é essencial para medir precipitação extrema (chuvas torrenciais) em zonas remotas.</p>
+                            <div class="detalhes-api">
+                                <div class="item-detalhe">
+                                    <span class="rotulo-detalhe">Saída:</span>
+                                    <span class="valor-detalhe">JSON / NetCDF</span>
+                                </div>
+                                <div class="item-detalhe">
+                                    <span class="rotulo-detalhe">Foco:</span>
+                                    <span class="valor-detalhe">Cólera e Leptospirose</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cartao-api glass">
+                        <div class="imagem-api">
+                            <img src="../assets/CPTEC.png" alt="Logo INPE">
+                        </div>
+                        <div class="conteudo-api">
+                            <span class="badge-satelite">Dados Nacionais</span>
+                            <h3>INPE - CPTEC & BDQueimadas</h3>
+                            <p>O Instituto Nacional de Pesquisas Espaciais fornece os modelos climáticos locais e o monitoramento em tempo real de focos de calor e fumaça.</p>
+                            <div class="detalhes-api">
+                                <div class="item-detalhe">
+                                    <span class="rotulo-detalhe">Cobertura:</span>
+                                    <span class="valor-detalhe">Brasil</span>
+                                </div>
+                                <div class="item-detalhe">
+                                    <span class="rotulo-detalhe">Foco:</span>
+                                    <span class="valor-detalhe">Crises Respiratórias</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cartao-api glass">
+                        <div class="imagem-api">
+                            <img src="../assets/charter.png" alt="Logo Space Charter">
+                        </div>
+                        <div class="conteudo-api">
+                            <span class="badge-satelite">Resposta a Desastres</span>
+                            <h3>International Space Charter</h3>
+                            <p>Consórcio global que libera imagens de altíssima resolução imediatamente após grandes desastres naturais para ajudar na logística emergencial.</p>
+                            <div class="detalhes-api">
+                                <div class="item-detalhe">
+                                    <span class="rotulo-detalhe">Caso de Uso:</span>
+                                    <span class="valor-detalhe">Rotas de Última Milha</span>
+                                </div>
+                                <div class="item-detalhe">
+                                    <span class="rotulo-detalhe">Ativação:</span>
+                                    <span class="valor-detalhe">Sob demanda</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-swagger">
+            <div class="caixa-principal">
+                <div class="cabecalho-secao">
+                    <h2>Documentação de Integração (OpenAPI)</h2>
+                    <p>Especificação técnica do Hub Preditivo exposto para o SUS e Indústria Farmacêutica (B2G/B2B).</p>
+                </div>
+
+                <div class="janela-terminal">
+                    <div class="cabecalho-terminal">
+                        <div class="botoes-mac">
+                            <span class="bolinha vermelha"></span>
+                            <span class="bolinha amarela"></span>
+                            <span class="bolinha verde"></span>
+                        </div>
+                        <div class="titulo-terminal">openapi.yaml</div>
+                    </div>
+                    <div class="corpo-terminal">
+<pre><code><span class="codigo-chave">openapi:</span> <span class="codigo-valor">3.0.3</span>
+<span class="codigo-chave">info:</span>
+  <span class="codigo-chave">title:</span> AstroPharma API - Documentação do Hub Preditivo
+  <span class="codigo-chave">description:</span> >
+    API B2B/B2G do AstroPharma. Consome telemetria geoespacial (ESA, NASA, INPE) 
+    e expõe endpoints de alertas epidemiológicos e recomendações logísticas 
+    preventivas.
+  <span class="codigo-chave">version:</span> <span class="codigo-valor">1.0.0</span>
+<span class="codigo-chave">servers:</span>
+  - <span class="codigo-chave">url:</span> <span class="codigo-string">https://api.astropharma.space/v1</span>
+    <span class="codigo-chave">description:</span> Servidor de Produção (MVP)
+
+<span class="codigo-chave">paths:</span>
+  <span class="codigo-chave">/alertas:</span>
+    <span class="codigo-chave">get:</span>
+      <span class="codigo-chave">summary:</span> Retorna os alertas epidemiológicos ativos
+      <span class="codigo-chave">parameters:</span>
+        - <span class="codigo-chave">name:</span> regiao
+          <span class="codigo-chave">in:</span> query
+          <span class="codigo-chave">required:</span> <span class="codigo-valor">false</span>
+          <span class="codigo-chave">schema:</span>
+            <span class="codigo-chave">type:</span> string
+        - <span class="codigo-chave">name:</span> risco
+          <span class="codigo-chave">in:</span> query
+          <span class="codigo-chave">required:</span> <span class="codigo-valor">false</span>
+          <span class="codigo-chave">schema:</span>
+            <span class="codigo-chave">type:</span> string
+            <span class="codigo-chave">enum:</span> [ALTO, CRITICO, MODERADO]
+      <span class="codigo-chave">responses:</span>
+        <span class="codigo-string">'200':</span>
+          <span class="codigo-chave">description:</span> Lista de alertas recuperada com sucesso.
+          <span class="codigo-chave">content:</span>
+            <span class="codigo-chave">application/json:</span>
+              <span class="codigo-chave">schema:</span>
+                <span class="codigo-chave">type:</span> array
+                <span class="codigo-chave">items:</span>
+                  <span class="codigo-chave">$ref:</span> <span class="codigo-string">'#/components/schemas/AlertaEpidemiologico'</span>
+
+  <span class="codigo-chave">/alertas/{id}/dossie-preventivo:</span>
+    <span class="codigo-chave">get:</span>
+      <span class="codigo-chave">summary:</span> Emite o dossiê documentado para ação do cliente
+      <span class="codigo-chave">parameters:</span>
+        - <span class="codigo-chave">name:</span> id
+          <span class="codigo-chave">in:</span> path
+          <span class="codigo-chave">required:</span> <span class="codigo-valor">true</span>
+          <span class="codigo-chave">schema:</span>
+            <span class="codigo-chave">type:</span> string
+      <span class="codigo-chave">responses:</span>
+        <span class="codigo-string">'200':</span>
+          <span class="codigo-chave">description:</span> Dossiê gerado com sucesso.
+          <span class="codigo-chave">content:</span>
+            <span class="codigo-chave">application/json:</span>
+              <span class="codigo-chave">schema:</span>
+                <span class="codigo-chave">$ref:</span> <span class="codigo-string">'#/components/schemas/DossieLogistico'</span></code></pre>
                     </div>
                 </div>
             </div>
@@ -96,7 +329,6 @@
         <div class="caixa-principal grade-rodape">
             <div class="logo-rodape">
                 <span class="icone-logo">▲</span> AstroPharma
-                <p>Global Solution 2026/1 - FIAP</p>
             </div>
             <div class="links-rodape">
                 <h5>Navegação</h5>
@@ -113,11 +345,10 @@
             </div>
         </div>
         <div class="fundo-rodape caixa-principal">
-            <p>&copy; 2026 AstroPharma. </p>
+            <p>&copy; 2026 AstroPharma. Desenvolvido para Global Solution FIAP.</p>
         </div>
     </footer>
 
     <script src="../js/main.js"></script>
 </body>
-
 </html>
