@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (setaDescer) {
         setaDescer.addEventListener('click', function(evento) {
             evento.preventDefault();
-            
             const idDestino = this.getAttribute('href');
             const secaoDestino = document.querySelector(idDestino);
 
