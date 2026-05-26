@@ -121,36 +121,8 @@
             </div>
         </section>
 
-        <section class="secao secao-pipeline">
-            <div class="caixa-principal">
-                <div class="cabecalho-secao">
-                    <h2>Fluxo de Ingestão de Dados (Pipeline)</h2>
-                    <p>Como as APIs espaciais alimentam nosso motor de inteligência artificial.</p>
-                </div>
-                
-                <div class="fluxo-pipeline glass">
-                    <div class="etapa-pipeline">
-                        <div class="icone-pipeline">🛰️</div>
-                        <h4>1. Coleta via APIs</h4>
-                        <p>Requisições GET para ESA/NASA/INPE</p>
-                    </div>
-                    <div class="seta-pipeline">➔</div>
-                    <div class="etapa-pipeline destaque-pipeline">
-                        <div class="icone-pipeline">🧠</div>
-                        <h4>2. Motor IA Preditiva</h4>
-                        <p>Cruzamento de anomalias com a base do e-SUS</p>
-                    </div>
-                    <div class="seta-pipeline">➔</div>
-                    <div class="etapa-pipeline">
-                        <div class="icone-pipeline">📄</div>
-                        <h4>3. Alerta & Dossiê</h4>
-                        <p>Documentação preventiva emitida ao cliente</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="secao secao-apis">
+<section class="secao secao-apis">
             <div class="caixa-principal">
                 
                 <div class="caixa-alerta glass">
@@ -171,12 +143,15 @@
                             <p>A Agência Espacial Europeia fornece a API OData do programa Copernicus. É a fonte principal para mapeamento de temperatura do solo e anomalias de umidade.</p>
                             <div class="detalhes-api">
                                 <div class="item-detalhe">
-                                    <span class="rotulo-detalhe">Endpoint:</span>
-                                    <span class="valor-detalhe">/odata/v1/Products</span>
-                                </div>
-                                <div class="item-detalhe">
                                     <span class="rotulo-detalhe">Foco:</span>
                                     <span class="valor-detalhe">Dengue e Zika</span>
+                                </div>
+                                <div class="item-detalhe detalhe-coluna">
+                                    <span class="rotulo-detalhe">Documentação:</span>
+                                    <div class="grupo-botoes-doc">
+                                        <a href="https://documentation.dataspace.copernicus.eu/APIs/OData.html" target="_blank" class="botao-doc">OData API</a>
+                                        <a href="https://documentation.dataspace.copernicus.eu/APIs/STAC.html" target="_blank" class="botao-doc">STAC API</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -192,12 +167,14 @@
                             <p>Projeto de Ciência Aberta da NASA. O sensor GPM é essencial para medir precipitação extrema (chuvas torrenciais) em zonas remotas.</p>
                             <div class="detalhes-api">
                                 <div class="item-detalhe">
-                                    <span class="rotulo-detalhe">Saída:</span>
-                                    <span class="valor-detalhe">JSON / NetCDF</span>
-                                </div>
-                                <div class="item-detalhe">
                                     <span class="rotulo-detalhe">Foco:</span>
                                     <span class="valor-detalhe">Cólera e Leptospirose</span>
+                                </div>
+                                <div class="item-detalhe detalhe-coluna">
+                                    <span class="rotulo-detalhe">Documentação:</span>
+                                    <div class="grupo-botoes-doc">
+                                        <a href="https://power.larc.nasa.gov/api/pages/?urls.primaryName=Indicators" target="_blank" class="botao-doc">Acessar API</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -213,12 +190,14 @@
                             <p>O Instituto Nacional de Pesquisas Espaciais fornece os modelos climáticos locais e o monitoramento em tempo real de focos de calor e fumaça.</p>
                             <div class="detalhes-api">
                                 <div class="item-detalhe">
-                                    <span class="rotulo-detalhe">Cobertura:</span>
-                                    <span class="valor-detalhe">Brasil</span>
-                                </div>
-                                <div class="item-detalhe">
                                     <span class="rotulo-detalhe">Foco:</span>
                                     <span class="valor-detalhe">Crises Respiratórias</span>
+                                </div>
+                                <div class="item-detalhe detalhe-coluna">
+                                    <span class="rotulo-detalhe">Documentação:</span>
+                                    <div class="grupo-botoes-doc">
+                                        <a href="https://servicos.cptec.inpe.br/XML/" target="_blank" class="botao-doc">Documentação XML</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -237,9 +216,11 @@
                                     <span class="rotulo-detalhe">Caso de Uso:</span>
                                     <span class="valor-detalhe">Rotas de Última Milha</span>
                                 </div>
-                                <div class="item-detalhe">
-                                    <span class="rotulo-detalhe">Ativação:</span>
-                                    <span class="valor-detalhe">Sob demanda</span>
+                                <div class="item-detalhe detalhe-coluna">
+                                    <span class="rotulo-detalhe">Documentação (Sob demanda):</span>
+                                    <div class="grupo-botoes-doc">
+                                        <a href="https://api.nasa.gov/" target="_blank" class="botao-doc">Acessar API</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -248,81 +229,7 @@
             </div>
         </section>
 
-        <section class="secao secao-swagger">
-            <div class="caixa-principal">
-                <div class="cabecalho-secao">
-                    <h2>Documentação de Integração (OpenAPI)</h2>
-                    <p>Especificação técnica do Hub Preditivo exposto para o SUS e Indústria Farmacêutica (B2G/B2B).</p>
-                </div>
-
-                <div class="janela-terminal">
-                    <div class="cabecalho-terminal">
-                        <div class="botoes-mac">
-                            <span class="bolinha vermelha"></span>
-                            <span class="bolinha amarela"></span>
-                            <span class="bolinha verde"></span>
-                        </div>
-                        <div class="titulo-terminal">openapi.yaml</div>
-                    </div>
-                    <div class="corpo-terminal">
-<pre><code><span class="codigo-chave">openapi:</span> <span class="codigo-valor">3.0.3</span>
-<span class="codigo-chave">info:</span>
-  <span class="codigo-chave">title:</span> AstroPharma API - Documentação do Hub Preditivo
-  <span class="codigo-chave">description:</span> >
-    API B2B/B2G do AstroPharma. Consome telemetria geoespacial (ESA, NASA, INPE) 
-    e expõe endpoints de alertas epidemiológicos e recomendações logísticas 
-    preventivas.
-  <span class="codigo-chave">version:</span> <span class="codigo-valor">1.0.0</span>
-<span class="codigo-chave">servers:</span>
-  - <span class="codigo-chave">url:</span> <span class="codigo-string">https://api.astropharma.space/v1</span>
-    <span class="codigo-chave">description:</span> Servidor de Produção (MVP)
-
-<span class="codigo-chave">paths:</span>
-  <span class="codigo-chave">/alertas:</span>
-    <span class="codigo-chave">get:</span>
-      <span class="codigo-chave">summary:</span> Retorna os alertas epidemiológicos ativos
-      <span class="codigo-chave">parameters:</span>
-        - <span class="codigo-chave">name:</span> regiao
-          <span class="codigo-chave">in:</span> query
-          <span class="codigo-chave">required:</span> <span class="codigo-valor">false</span>
-          <span class="codigo-chave">schema:</span>
-            <span class="codigo-chave">type:</span> string
-        - <span class="codigo-chave">name:</span> risco
-          <span class="codigo-chave">in:</span> query
-          <span class="codigo-chave">required:</span> <span class="codigo-valor">false</span>
-          <span class="codigo-chave">schema:</span>
-            <span class="codigo-chave">type:</span> string
-            <span class="codigo-chave">enum:</span> [ALTO, CRITICO, MODERADO]
-      <span class="codigo-chave">responses:</span>
-        <span class="codigo-string">'200':</span>
-          <span class="codigo-chave">description:</span> Lista de alertas recuperada com sucesso.
-          <span class="codigo-chave">content:</span>
-            <span class="codigo-chave">application/json:</span>
-              <span class="codigo-chave">schema:</span>
-                <span class="codigo-chave">type:</span> array
-                <span class="codigo-chave">items:</span>
-                  <span class="codigo-chave">$ref:</span> <span class="codigo-string">'#/components/schemas/AlertaEpidemiologico'</span>
-
-  <span class="codigo-chave">/alertas/{id}/dossie-preventivo:</span>
-    <span class="codigo-chave">get:</span>
-      <span class="codigo-chave">summary:</span> Emite o dossiê documentado para ação do cliente
-      <span class="codigo-chave">parameters:</span>
-        - <span class="codigo-chave">name:</span> id
-          <span class="codigo-chave">in:</span> path
-          <span class="codigo-chave">required:</span> <span class="codigo-valor">true</span>
-          <span class="codigo-chave">schema:</span>
-            <span class="codigo-chave">type:</span> string
-      <span class="codigo-chave">responses:</span>
-        <span class="codigo-string">'200':</span>
-          <span class="codigo-chave">description:</span> Dossiê gerado com sucesso.
-          <span class="codigo-chave">content:</span>
-            <span class="codigo-chave">application/json:</span>
-              <span class="codigo-chave">schema:</span>
-                <span class="codigo-chave">$ref:</span> <span class="codigo-string">'#/components/schemas/DossieLogistico'</span></code></pre>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
     </main>
 
     <footer class="rodape">

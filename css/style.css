@@ -913,12 +913,7 @@ a { text-decoration: none; color: inherit; transition: var(--transicao-padrao); 
 /* ==========================================================================
    ESTILOS PÁGINA SOBRE E SOLUÇÃO 
    ========================================================================== */
-   /* ==========================================================================
-   ESTILOS NOVOS: PÁGINA SOLUÇÃO & ARQUITETURA DE DADOS
-   ========================================================================== */
-
-/* --- 1. Grade de Comparação (Reativo vs Preditivo) --- */
-.grade-comparacao {
+   .grade-comparacao {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -1018,6 +1013,7 @@ a { text-decoration: none; color: inherit; transition: var(--transicao-padrao); 
 }
 
 /* --- 3. Grade de APIs Espaciais --- */
+/* --- 3. Grade de APIs Espaciais --- */
 .grade-apis {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1108,121 +1104,48 @@ a { text-decoration: none; color: inherit; transition: var(--transicao-padrao); 
     color: var(--cor-texto-secundario);
 }
 
+.item-detalhe.detalhe-coluna {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.grupo-botoes-doc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.botao-doc {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f5f9;
+    color: var(--cor-azul-destaque);
+    border: 1px solid #cbd5e1;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: var(--transicao-padrao);
+}
+
+.botao-doc:hover {
+    background-color: var(--cor-azul-destaque);
+    color: #ffffff;
+    border-color: var(--cor-azul-destaque);
+    transform: translateY(-2px);
+    box-shadow: var(--sombra-leve);
+}
+
 .valor-detalhe {
     font-family: monospace;
     color: var(--cor-texto-principal);
     font-weight: 700;
-}
-
-/* --- 4. Pipeline de Dados --- */
-.fluxo-pipeline {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--cor-fundo-cartao);
-    padding: 3rem;
-    border-radius: 16px;
-    border: 1px solid var(--cor-borda);
-    box-shadow: var(--sombra-media);
-}
-
-.etapa-pipeline {
-    text-align: center;
-    flex: 1;
-}
-
-.icone-pipeline {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.etapa-pipeline h4 {
-    font-size: 1.1rem;
-    color: var(--cor-texto-principal);
-    margin-bottom: 0.5rem;
-}
-
-.etapa-pipeline p {
-    font-size: 0.9rem;
-    color: var(--cor-texto-secundario);
-}
-
-.destaque-pipeline {
-    background-color: #f0f9ff;
-    padding: 1.5rem;
-    border-radius: 12px;
-    border: 1px solid #bae6fd;
-}
-
-.seta-pipeline {
-    font-size: 2rem;
-    color: #cbd5e1;
-    margin: 0 1rem;
-}
-
-/* --- 5. Janela Terminal Swagger --- */
-.janela-terminal {
-    background-color: #0f172a; /* Fundo escuro do terminal */
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
-}
-
-.cabecalho-terminal {
-    background-color: #1e293b;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.botoes-mac {
-    display: flex;
-    gap: 8px;
-}
-
-.bolinha {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-.bolinha.vermelha { background-color: #ff5f56; }
-.bolinha.amarela { background-color: #ffbd2e; }
-.bolinha.verde { background-color: #27c93f; }
-
-.titulo-terminal {
-    flex-grow: 1;
-    text-align: center;
-    color: #94a3b8;
-    font-family: monospace;
-    font-size: 0.9rem;
-    margin-left: -40px; /* Compensa as bolinhas para centralizar */
-}
-
-.corpo-terminal {
-    padding: 2rem;
-    overflow-x: auto; /* Permite rolagem no mobile */
-}
-
-.corpo-terminal pre {
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #e2e8f0;
-}
-
-/* Cores de Sintaxe (Syntax Highlighting) */
-.codigo-chave { color: #38bdf8; } /* Azul claro */
-.codigo-valor { color: #f472b6; } /* Rosa */
-.codigo-string { color: #a3e635; } /* Verde limão */
-
-/* --- Responsividade Extra --- */
-@media (max-width: 992px) {
-    .grade-comparacao, .grade-apis { grid-template-columns: 1fr; }
-    .fluxo-pipeline { flex-direction: column; gap: 1.5rem; text-align: center; }
-    .seta-pipeline { transform: rotate(90deg); margin: 0.5rem 0; }
-    .destaque-pipeline { padding: 1.5rem; width: 100%; }
 }
 
 .texto-topo-sobre {
