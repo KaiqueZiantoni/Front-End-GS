@@ -1,18 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AstroPharma</title>
+    <title>AstroPharma | Logística Farmacêutica Preditiva Orbital</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="cabecalho">
-            <ul>
-                <li><a href="index.html"></a></li>
-                <li><a href=""></a></li>
-            </ul>
+
+    <header class="cabecalho">
+        <div class="caixa-principal nav-container">
+            <a href="index.html" class="logo">
+                <span class="icone-logo">▲</span>
+                <span class="texto-logo">AstroPharma</span>
+            </a>
+
+            <button class="botao-menu-mobile" id="botao-menu-mobile" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu-navegacao" id="menu-navegacao">
+                <ul>
+                    <li><a href="index.html" class="ativo">Home</a></li>
+                    <li><a href="pages/sobre.html">Sobre</a></li>
+                    <li><a href="pages/solucao.html">Solução</a></li>
+                    <li><a href="pages/faq.html">FAQ</a></li>
+                    <li><a href="pages/integrantes.html">Equipe</a></li>
+                    <li><a href="pages/contato.html" class="botao botao-pequeno botao-principal">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
+    <main>
+        <section class="destaque">
+            <div class="sobreposicao-destaque"></div>
+            <div class="caixa-principal conteudo-destaque">
+                <div class="bloco-texto-destaque">
+                    <span class="etiqueta">Global Solution 2026/1 • Economia Espacial</span>
+                    <h1>Previsibilidade Espacial para a Segurança em Saúde</h1>
+                    <p>Antecipe surtos de doenças sazonais em zonas remotas ou rurais. Automatizamos a transferência
+                        preventiva de medicamentos críticos utilizando dados da ESA/NASA cruzados com Inteligência
+                        Artificial.</p>
+                    <div class="acoes-destaque">
+                        <a href="pages/solucao.html" class="botao botao-principal">Conheça a Solução</a>
+                        <a href="pages/solucao.html" class="botao botao-secundario">Veja nosso algoritmo em</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <a href="#proxima-secao" class="seta-descer" aria-label="Rolar para a próxima seção">
+                <svg  viewBox="0 0 24 24" >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
+        </section>
+
+        <section id="proxima-secao" class="secao secao-problema">
+            <div class="caixa-principal grades">
+                <div class="bloco-texto">
+                    <h2>A Logística Reativa é Obsoleta.</h2>
+                    <p>Comunidades rurais, indígenas, ou zonas de risco, sofrem impactos severos com o aumento de doenças sazonais
+                        impulsionadas pelas mudanças climáticas abrubtas e inesperadas. O modelo atual de distribuição de medicamentos reage
+                        apenas<strong>após o surto acontecer.</strong> </p>
+                    <p>O AstroPharma reescreve essa arquitetura. Transformamos dados espaciais em saúde terrestre,
+                        atuando de forma<strong>preditiva</strong>  onde o acesso é mais difícil.</p>
+                </div>
+                <div class="grade-estatisticas">
+                    <div class="cartao-estatistica">
+                        <h3>ESA & NASA</h3>
+                        <p>Integração direta com telemetria e satélites de monitoramento climático.</p>
+                    </div>
+                    <div class="cartao-estatistica">
+                        <h3>Preditivo</h3>
+                        <p>Previsão de surtos semanas antes de ocorrerem.</p>
+                    </div>
+                    <div class="cartao-estatistica">
+                        <h3>Zonas Remotas</h3>
+                        <p>Foco exclusivo em áreas de difícil acesso e alta vulnerabilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao como-funciona">
+            <div class="caixa-principal">
+                <div class="cabecalho-secao">
+                    <h2>Do Espaço à Superfície</h2>
+                    <p>Infraestrutura de dados robusta conectando a órbita à logística terrestre.</p>
+                </div>
+                <div class="grade-passos">
+                    <div class="cartao-passo">
+                        <div class="icone-passo">01</div>
+                        <h4>Telemetria Orbital</h4>
+                        <p>Coleta de dados em tempo real sobre umidade, temperatura e anomalias climáticas em biomas
+                            isolados.</p>
+                    </div>
+                    <div class="cartao-passo">
+                        <div class="icone-passo">02</div>
+                        <h4>Análise por IA</h4>
+                        <p>Algoritmos cruzam variações climáticas com históricos epidemiológicos para calcular riscos de
+                            surtos.</p>
+                    </div>
+                    <div class="cartao-passo">
+                        <div class="icone-passo">03</div>
+                        <h4>Ação Preventiva</h4>
+                        <p>Acionamento automático da cadeia de suprimentos B2B para o envio antecipado de medicamentos
+                            ao local de risco.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="caixa-principal grade-rodape">
+            <div class="logo-rodape">
+                <span class="icone-logo">▲</span> AstroPharma
+                <p>Global Solution 2026/1 - FIAP</p>
+            </div>
+            <div class="links-rodape">
+                <h5>Navegação</h5>
+                <ul>
+                    <li><a href="pages/sobre.html">Sobre o Projeto</a></li>
+                    <li><a href="pages/solucao.html">Solução</a></li>
+                    <li><a href="pages/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="contato-rodape">
+                <h5>Startup</h5>
+                <p>contato@astropharma.space</p>
+                <p><a href="pages/integrantes.html">Conheça a Equipe</a></p>
+            </div>
+        </div>
+        <div class="fundo-rodape caixa-principal">
+            <p>&copy; 2026 AstroPharma. </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
