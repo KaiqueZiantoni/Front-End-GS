@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solução | AstroPharma - Logística Orbital Preditiva</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="caixa-principal nav-container">
+            <a href="../index.html" class="logo">
+                <span class="icone-logo">▲</span>
+                <span class="texto-logo">AstroPharma</span>
+            </a>
+            <button class="botao-menu-mobile" id="botao-menu-mobile" aria-label="Abrir Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="menu-navegacao" id="menu-navegacao">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="solucao.html" class="ativo">Solução</a></li>
+                    <li><a href="dashboard.html">APIs disponíveis</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="integrantes.html">Equipe</a></li>
+                    <li><a href="contato.html" class="botao botao-pequeno botao-principal">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao">
+            <div class="caixa-principal">
+                <div class="texto-topo-sobre">
+                    <span class="etiqueta">Tecnologia e Impacto</span>
+                    <h1>Nossa Solução</h1>
+                    <p>Entenda como cruzamos inteligência geográfica orbital, algoritmos preditivos e logística avançada para transformar a distribuição global de insumos médicos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-modelo-negocio">
+            <div class="caixa-principal">
+                <div class="cabecalho-secao">
+                    <span class="subtitulo-marca">Mercado e Atuação</span>
+                    <h2>Logística Inteligente de Duplo Impacto</h2>
+                    <p>A AstroPharma opera na intersecção estratégica entre o setor privado farmacêutico e a gestão de saúde pública governamental.</p>
+                </div>
+                
+                <div class="bloco-texto-linha">
+                    <div class="badge-modelo">B2G</div>
+                    <h4>Business-to-Government (B2G)</h4>
+                    <p>Atuamos em parceria com o Ministério da Saúde, Secretarias Estaduais e o SUS. A plataforma ajuda o governo a mapear distritos sanitários rurais e indígenas vulneráveis, antecipando compras públicas e o envio de lotes de medicamentos antes que surtos sazonais de Dengue, Malária ou Gastroenterites colapsem os hospitais locais. Isso reduz o custo público com internações emergenciais.</p>
+                </div>
+
+                <div class="bloco-texto-linha">
+                    <div class="badge-modelo B2B">B2B</div>
+                    <h4>Business-to-Business (B2B)</h4>
+                    <p>Atendemos grandes indústrias farmacêuticas, laboratórios e distribuidores privados. O sistema otimiza a cadeia de suprimentos (Supply Chain), evitando o desperdício de medicamentos por vencimento em centros de distribuição e redirecionando estoques de forma dinâmica para farmácias e hubs regionais localizados nas zonas onde a IA previu uma alta iminente na demanda climática.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="secao secao-simulador">
+            <div class="caixa-principal grade-simulador-layout">
+                <div class="bloco-texto">
+                    <span class="subtitulo-marca">Demonstração Interativa</span>
+                    <h2>O Algoritmo em Ação</h2>
+                    <p>Selecione os diferentes cenários climáticos abaixo para ver como nossa IA altera o roteamento logístico preventivo de forma autônoma.</p>
+                    
+                    <div class="controles-simulador">
+                        <button class="sim-btn active" data-target="dengue">Sazonalidade: Umidade e Calor</button>
+                        <button class="sim-btn" data-target="colera">Desastre Climático: Enchentes</button>
+                        <button class="sim-btn" data-target="respiratorio">Anomalia: Seca e Queimadas</button>
+                    </div>
+                </div>
+                
+                <div class="simulator-display">
+                    <div class="display-card glass" id="sim-result">
+                        <div class="display-header">
+                            <span class="badge badge-alert">Alerta Emitido</span>
+                            <span class="satellite-source">Satélite: Sentinel-3 (ESA)</span>
+                        </div>
+                        <h3 id="display-title">Alerta de Risco: Dengue & Zika</h3>
+                        <div class="display-grid">
+                            <div class="metric-box">
+                                <span class="metric-label">Indicador Espacial</span>
+                                <span class="metric-value" id="display-metric">Temp +3.2°C | Umidade Alagada</span>
+                            </div>
+                            <div class="metric-box">
+                                <span class="metric-label">Janela Epidemiológica</span>
+                                <span class="metric-value text-warning" id="display-window">Surto estimado em 15 dias</span>
+                            </div>
+                        </div>
+                        <div class="action-box">
+                            <h4>Ordem de Transferência Preventiva Gerada:</h4>
+                            <p id="display-action">Remanejando 4.500 caixas de Paracetamol, Dipirona e Sais de Reidratação Oral do CD Central para as UBS mapeadas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="caixa-principal grade-rodape">
+            <div class="logo-rodape">
+                <span class="icone-logo">▲</span> AstroPharma
+                <p>Global Solution 2026/1 - FIAP</p>
+            </div>
+            <div class="links-rodape">
+                <h5>Navegação</h5>
+                <ul>
+                    <li><a href="sobre.html">Sobre o Projeto</a></li>
+                    <li><a href="solucao.html">Solução</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="contato-rodape">
+                <h5>Startup</h5>
+                <p>contato@astropharma.space</p>
+                <p><a href="integrantes.html">Conheça a Equipe</a></p>
+            </div>
+        </div>
+        <div class="fundo-rodape caixa-principal">
+            <p>&copy; 2026 AstroPharma. </p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
