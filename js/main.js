@@ -1,44 +1,34 @@
-// Aguarda o DOM carregar completamente antes de rodar o JS
 document.addEventListener("DOMContentLoaded", () => {
     
-    // ==========================================
-    // 1. LÓGICA DO MENU MOBILE (CORRIGIDA PARA PT-BR)
-    // ==========================================
+
     const botaoMenuMobile = document.getElementById("botao-menu-mobile");
     const menuNavegacao = document.getElementById("menu-navegacao");
 
-    if(botaoMenuMobile && menuNavegacao) {
+    if (botaoMenuMobile && menuNavegacao) {
         botaoMenuMobile.addEventListener("click", () => {
             menuNavegacao.classList.toggle("ativo");
         });
     }
 
-    // Fecha o menu mobile se um link for clicado (melhoria de UX)
     const linksNavegacao = document.querySelectorAll(".menu-navegacao ul li a");
     linksNavegacao.forEach(link => {
         link.addEventListener("click", () => {
-            if(menuNavegacao.classList.contains("ativo")) {
+            if (menuNavegacao.classList.contains("ativo")) {
                 menuNavegacao.classList.remove("ativo");
             }
         });
     });
 
-    // ==========================================
-    // 2. LÓGICA DA SETA DE ROLAGEM
-    // ==========================================
+
     const setaDescer = document.querySelector('.seta-descer');
     
     if (setaDescer) {
         setaDescer.addEventListener('click', function(evento) {
-            // Previne o pulo seco do link padrão
             evento.preventDefault();
-            
-            // Pega o destino pelo href da seta
             const idDestino = this.getAttribute('href');
             const secaoDestino = document.querySelector(idDestino);
 
             if (secaoDestino) {
-                // Rola até a seção suavemente
                 secaoDestino.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
@@ -46,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-});
+
 
     const simResultCard = document.getElementById("sim-result");
     
@@ -57,21 +47,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 source: "Satélite: Sentinel-3 (ESA)",
                 metric: "Temp +3.2°C | Umidade Alagada",
                 window: "Surto estimado em 15 dias",
-                action: "Remanejando 4.500 caixas de Paracetamol, Dipirona e Sais de Reidratação Oral do CD Central para as UBS mapeadas."
+                action: "Aviso de alta demanda encaminhado ao cliente. Recomendação: Iniciar plano de remanejamento de Sais de Reidratação Oral e Analgésicos para as UBS mapeadas no relatório."
             },
             colera: {
                 title: "Alerta de Risco: Cólera & Leptospirose",
                 source: "Satélite: GPM (NASA) - Precipitation",
                 metric: "Precipitação Extrema > 180mm",
                 window: "Alagamento Crítico detectado",
-                action: "Liberando lotes preventivos de Antibióticos e Sais de Reidratação Oral diretamente para os hubs municipais."
+                action: "Alerta Crítico emitido ao Ministério da Saúde. Dossiê meteorológico anexado sugerindo a liberação imediata da reserva de contingência de Antibióticos."
             },
             respiratorio: {
                 title: "Alerta de Risco: Crises Respiratórias",
                 source: "Satélite: Terra/Aqua (NASA) - MODIS",
                 metric: "Material Particulado PM2.5 Elevado",
                 window: "Umidade < 15% + Fumaça ativa",
-                action: "Disparando remessa emergencial antecipada de Broncodilatadores e Corticoides Inalatórios."
+                action: "Relatório de anomalia disponibilizado no painel do distribuidor privado. Sugestão: Antecipar envios de Broncodilatadores para a região afetada."
             }
         };
 
@@ -106,3 +96,34 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+
+
+    const botoesFaq = document.querySelectorAll('.botao-faq');
+
+    if (botoesFaq.length > 0) {
+        botoesFaq.forEach(botao => {
+            botao.addEventListener('click', function() {
+                const itemAtual = this.parentElement;
+                
+                const respostaAtual = itemAtual.querySelector('.resposta-faq');
+                
+                itemAtual.classList.toggle('ativo');
+
+                if (itemAtual.classList.contains('ativo')) {
+                    respostaAtual.style.maxHeight = respostaAtual.scrollHeight + "px";
+                } else {
+                    respostaAtual.style.maxHeight = "0";
+                }
+
+                botoesFaq.forEach(outroBotao => {
+                    const outroItem = outroBotao.parentElement;
+                    if (outroItem !== itemAtual && outroItem.classList.contains('ativo')) {
+                        outroItem.classList.remove('ativo');
+                        outroItem.querySelector('.resposta-faq').style.maxHeight = "0";
+                    }
+                });
+            });
+        });
+    }
+
+});
