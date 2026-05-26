@@ -88,10 +88,10 @@
 
 .item-faq.ativo .icone-faq {
     transform: rotate(45deg); 
-
+}
 @media (max-width: 992px) {
     .grade-faq-layout {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-}}
+}
