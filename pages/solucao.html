@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solução | AstroPharma - Logística Orbital Preditiva</title>
-    
+
     <link rel="stylesheet" href="../css/style.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header class="cabecalho">
@@ -27,7 +29,6 @@
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="solucao.html" class="ativo">Solução</a></li>
-                    <li><a href="dashboard.html">APIs disponíveis</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="integrantes.html">Equipe</a></li>
                     <li><a href="contato.html" class="botao botao-pequeno botao-principal">Contato</a></li>
@@ -42,49 +43,26 @@
                 <div class="texto-topo-sobre">
                     <span class="etiqueta">Tecnologia e Impacto</span>
                     <h1>Nossa Solução</h1>
-                    <p>Entenda como cruzamos inteligência geográfica orbital, algoritmos preditivos e logística avançada para transformar a distribuição global de insumos médicos.</p>
+                    <p>Entenda como cruzamos inteligência geográfica orbital, algoritmos preditivos e logística avançada
+                        para transformar a distribuição global de insumos médicos.</p>
                 </div>
             </div>
         </section>
-
-        <section class="secao secao-modelo-negocio">
-            <div class="caixa-principal">
-                <div class="cabecalho-secao">
-                    <span class="subtitulo-marca">Mercado e Atuação</span>
-                    <h2>Logística Inteligente de Duplo Impacto</h2>
-                    <p>A AstroPharma opera na intersecção estratégica entre o setor privado farmacêutico e a gestão de saúde pública governamental.</p>
-                </div>
-                
-                <div class="bloco-texto-linha">
-                    <div class="badge-modelo">B2G</div>
-                    <h4>Business-to-Government (B2G)</h4>
-                    <p>Atuamos em parceria com o Ministério da Saúde, Secretarias Estaduais e o SUS. A plataforma ajuda o governo a mapear distritos sanitários rurais e indígenas vulneráveis, antecipando compras públicas e o envio de lotes de medicamentos antes que surtos sazonais de Dengue, Malária ou Gastroenterites colapsem os hospitais locais. Isso reduz o custo público com internações emergenciais.</p>
-                </div>
-
-                <div class="bloco-texto-linha">
-                    <div class="badge-modelo B2B">B2B</div>
-                    <h4>Business-to-Business (B2B)</h4>
-                    <p>Atendemos grandes indústrias farmacêuticas, laboratórios e distribuidores privados. O sistema otimiza a cadeia de suprimentos (Supply Chain), evitando o desperdício de medicamentos por vencimento em centros de distribuição e redirecionando estoques de forma dinâmica para farmácias e hubs regionais localizados nas zonas onde a IA previu uma alta iminente na demanda climática.</p>
-                </div>
-            </div>
-        </section>
-
-
 
         <section class="secao secao-simulador">
             <div class="caixa-principal grade-simulador-layout">
                 <div class="bloco-texto">
                     <span class="subtitulo-marca">Demonstração Interativa</span>
                     <h2>O Algoritmo em Ação</h2>
-                    <p>Selecione os diferentes cenários climáticos abaixo para ver como nossa IA altera o roteamento logístico preventivo de forma autônoma.</p>
-                    
+                    <p>Selecione os diferentes cenários climáticos abaixo para ver as doenças recorrentes nesses cenários, e as condições que a região se encontra.</p>
+
                     <div class="controles-simulador">
                         <button class="sim-btn active" data-target="dengue">Sazonalidade: Umidade e Calor</button>
                         <button class="sim-btn" data-target="colera">Desastre Climático: Enchentes</button>
                         <button class="sim-btn" data-target="respiratorio">Anomalia: Seca e Queimadas</button>
                     </div>
                 </div>
-                
+
                 <div class="simulator-display">
                     <div class="display-card glass" id="sim-result">
                         <div class="display-header">
@@ -99,12 +77,14 @@
                             </div>
                             <div class="metric-box">
                                 <span class="metric-label">Janela Epidemiológica</span>
-                                <span class="metric-value text-warning" id="display-window">Surto estimado em 15 dias</span>
+                                <span class="metric-value text-warning" id="display-window">Surto estimado em 15
+                                    dias</span>
                             </div>
                         </div>
                         <div class="action-box">
                             <h4>Ordem de Transferência Preventiva Gerada:</h4>
-                            <p id="display-action">Remanejando 4.500 caixas de Paracetamol, Dipirona e Sais de Reidratação Oral do CD Central para as UBS mapeadas.</p>
+                            <p id="display-action">Remanejando 4.500 caixas de Paracetamol, Dipirona e Sais de
+                                Reidratação Oral do CD Central para as UBS mapeadas.</p>
                         </div>
                     </div>
                 </div>
@@ -139,4 +119,5 @@
 
     <script src="../js/main.js"></script>
 </body>
+
 </html>
