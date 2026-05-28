@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solução e Arquitetura | AstroPharma - Logística Orbital</title>
+    <title>Solução e Arquitetura | AstroPharma - BI Preditivo e Logística</title>
 
     <link rel="stylesheet" href="../css/style.css">
 
@@ -41,9 +41,10 @@
         <section class="secao">
             <div class="caixa-principal">
                 <div class="texto-topo-sobre">
-                    <span class="etiqueta">Tecnologia e Impacto</span>
+                    <span class="etiqueta">Tecnologia SaaS B2B</span>
                     <h1>Nossa Solução</h1>
-                    <p>Entenda como cruzamos inteligência geográfica orbital, algoritmos preditivos e integração de APIs para transformar a distribuição global de insumos médicos.</p>
+                    <p>Entenda como cruzamos meteorologia de satélite, epidemiologia preditiva e gestão de supply chain
+                        para otimizar o estoque do varejo farmacêutico de forma autônoma.</p>
                 </div>
             </div>
         </section>
@@ -51,30 +52,32 @@
         <section id="inovacao" class="secao secao-inovacao">
             <div class="caixa-principal">
                 <div class="cabecalho-secao">
-                    <h2>A Inversão do Fluxo Logístico</h2>
-                    <p>Como o AstroPharma muda o jogo da distribuição de medicamentos na Terra.</p>
+                    <h2>A Inversão do Fluxo de Abastecimento</h2>
+                    <p>Como o AstroPharma automatiza a decisão de estoque entre Centros de Distribuição e Farmácias.</p>
                 </div>
-                
+
                 <div class="grade-comparacao">
                     <div class="cartao-comparacao reativo">
                         <h3>Modelo Tradicional Reativo</h3>
                         <div class="indicador-status ruim">Fluxo Atual</div>
-                        <p>Movimentação de grandes volumes de medicamentos apenas <strong>após o surto ser declarado</strong> ou quando os estoques locais zeram.</p>
+                        <p>As farmácias operam com ERPs engessados, baseando o estoque no passado e solicitando compras
+                            extras apenas <strong>após a ruptura de gôndola.</strong></p>
                         <ul class="lista-comparacao">
-                            <li>Fretes emergenciais de alto custo</li>
-                            <li>Atrasos críticos na entrega (15+ dias)</li>
-                            <li>Desperdício por vencimento em locais errados</li>
+                            <li>Compras emergenciais de alto custo</li>
+                            <li>Perda de vendas e fidelidade de clientes</li>
+                            <li>Desperdício financeiro por validade vencida</li>
                         </ul>
                     </div>
 
                     <div class="cartao-comparacao preditivo">
                         <h3>Modelo AstroPharma Preditivo</h3>
-                        <div class="indicador-status bom">Nossa Solução</div>
-                        <p>Identificação de gatilhos climáticos por satélite e emissão de ordens preventivas <strong>semanas antes do surto estourar</strong>.</p>
+                        <div class="indicador-status bom">Nossa Solução SaaS</div>
+                        <p>Identificação de anomalias no microclima e cálculo da Janela Biológica, gerando alertas
+                            <strong>13 a 15 dias antes dos pacientes chegarem ao balcão.</strong></p>
                         <ul class="lista-comparacao">
-                            <li>Distribuição antecipatória inteligente</li>
-                            <li>Medicamento disponível antes do primeiro caso</li>
-                            <li>Otimização drástica da Supply Chain</li>
+                            <li>Otimização financeira e logística do Supply Chain</li>
+                            <li>Medicamento na gôndola antes do pico de demanda</li>
+                            <li>Abastecimento autônomo baseado no Princípio Ativo (ATC)</li>
                         </ul>
                     </div>
                 </div>
@@ -85,36 +88,41 @@
             <div class="caixa-principal grade-simulador-layout">
                 <div class="bloco-texto">
                     <span class="subtitulo-marca">Demonstração Interativa</span>
-                    <h2>O Algoritmo em Ação</h2>
-                    <p>Selecione os diferentes cenários climáticos abaixo para ver as doenças recorrentes nesses cenários, e as condições que a região se encontra.</p>
+                    <h2>O BI Preditivo em Ação</h2>
+                    <p>Selecione os cenários climáticos abaixo para simular como a Inteligência Artificial calcula a
+                        latência de adoecimento e evita a quebra de estoque nas farmácias.</p>
 
                     <div class="controles-simulador">
-                        <button class="sim-btn active" data-target="dengue">Sazonalidade: Umidade e Calor</button>
-                        <button class="sim-btn" data-target="colera">Desastre Climático: Enchentes</button>
-                        <button class="sim-btn" data-target="respiratorio">Anomalia: Seca e Queimadas</button>
+                        <button class="sim-btn active" data-target="dengue">Ondas de Calor Repentinas</button>
+                        <button class="sim-btn" data-target="colera">Chuvas Intensas / Enchentes</button>
+                        <button class="sim-btn" data-target="respiratorio">Oscilações Térmicas Bruscas</button>
                     </div>
                 </div>
 
                 <div class="simulator-display">
                     <div class="display-card glass" id="sim-result">
                         <div class="display-header">
-                            <span class="badge badge-alert">Alerta Emitido</span>
-                            <span class="satellite-source">Satélite: Sentinel-3 (ESA)</span>
+                            <span class="badge badge-alert">Gatilho de Estoque Emitido</span>
+                            <span class="satellite-source">API Climática: ClimAPI / OpenWeather</span>
                         </div>
-                        <h3 id="display-title">Alerta de Risco: Dengue & Zika</h3>
+                        <h3 id="display-title">Alerta de Demanda: Corticoides e Respiratórios</h3>
                         <div class="display-grid">
                             <div class="metric-box">
-                                <span class="metric-label">Indicador Espacial</span>
-                                <span class="metric-value" id="display-metric">Temp +3.2°C | Umidade Alagada</span>
+                                <span class="metric-label">Anomalia no Microclima</span>
+                                <span class="metric-value" id="display-metric">Onda de Calor Súbita | Microrregião
+                                    SP</span>
                             </div>
                             <div class="metric-box">
-                                <span class="metric-label">Janela Epidemiológica</span>
-                                <span class="metric-value text-warning" id="display-window">Surto estimado em 15 dias</span>
+                                <span class="metric-label">Cálculo da Janela Biológica</span>
+                                <span class="metric-value text-warning" id="display-window">Pico de demanda estimado em
+                                    13 a 15 dias</span>
                             </div>
                         </div>
                         <div class="action-box">
-                            <h4>Ordem de Transferência Preventiva Gerada:</h4>
-                            <p id="display-action">Remanejando 4.500 caixas de Paracetamol, Dipirona e Sais de Reidratação Oral do CD Central para as UBS mapeadas.</p>
+                            <h4>Ação Logística Preventiva (SaaS):</h4>
+                            <p id="display-action">Transferência autônoma via classificação ATC (Princípio Ativo) do
+                                Centro de Distribuição Central para as farmácias da região afetada, evitando a ruptura
+                                de gôndola.</p>
                         </div>
                     </div>
                 </div>
@@ -122,35 +130,41 @@
         </section>
 
 
-<section class="secao secao-apis">
+        <section class="secao secao-apis">
             <div class="caixa-principal">
-                
+
                 <div class="caixa-alerta glass">
                     <div class="icone-alerta">💡</div>
                     <div class="texto-alerta">
-                        <strong>Nota de Arquitetura do Sistema (MVP):</strong> As APIs listadas abaixo representam o ecossistema real de dados que o AstroPharma utiliza. Elas possuem endpoints abertos e são integráveis para fornecer telemetria de chuva, umidade e temperatura.
+                        <strong>Nota de Arquitetura do Sistema (MVP):</strong> As Open APIs climáticas listadas abaixo
+                        alimentam o motor de integração do AstroPharma. Cruzando esses dados com a Janela Biológica,
+                        prevemos o comportamento de compra gerado por problemas de saúde.
                     </div>
                 </div>
 
                 <div class="grade-apis">
                     <div class="cartao-api glass">
                         <div class="imagem-api">
-                            <img src="../assets/copernicos.png" alt="Logo Copernicus">
+                            <img src="../assets/openWeather.png" alt="Logo Copernicus">
                         </div>
                         <div class="conteudo-api">
-                            <span class="badge-satelite">Satélites Sentinel</span>
-                            <h3>Copernicus Data Space (ESA)</h3>
-                            <p>A Agência Espacial Europeia fornece a API OData do programa Copernicus. É a fonte principal para mapeamento de temperatura do solo e anomalias de umidade.</p>
+                            <span class="badge-satelite">Monitoramento Global</span>
+                            <h3>OpenWeatherMap</h3>
+                            <p>API aberta de extrema importância que fornece dados precisos de telemetria climática
+                                global e regional, fundamentais para mapear variações drásticas e anomalias de
+                                microclima.</p>
                             <div class="detalhes-api">
                                 <div class="item-detalhe">
                                     <span class="rotulo-detalhe">Foco:</span>
-                                    <span class="valor-detalhe">Dengue e Zika</span>
+                                    <span class="valor-detalhe">Anomalias de Temperatura</span>
                                 </div>
                                 <div class="item-detalhe detalhe-coluna">
                                     <span class="rotulo-detalhe">Documentação:</span>
                                     <div class="grupo-botoes-doc">
-                                        <a href="https://documentation.dataspace.copernicus.eu/APIs/OData.html" target="_blank" class="botao-doc">OData API</a>
-                                        <a href="https://documentation.dataspace.copernicus.eu/APIs/STAC.html" target="_blank" class="botao-doc">STAC API</a>
+                                        <a href="https://documentation.dataspace.copernicus.eu/APIs/OData.html"
+                                            target="_blank" class="botao-doc">OData API</a>
+                                        <a href="https://documentation.dataspace.copernicus.eu/APIs/STAC.html"
+                                            target="_blank" class="botao-doc">STAC API</a>
                                     </div>
                                 </div>
                             </div>
@@ -159,21 +173,24 @@
 
                     <div class="cartao-api glass">
                         <div class="imagem-api">
-                            <img src="../assets/gpm.png" alt="Logo NASA">
+                            <img src="../assets/HGweather.png" alt="Logo NASA">
                         </div>
                         <div class="conteudo-api">
-                            <span class="badge-satelite">Missão GPM</span>
-                            <h3>NASA POWER & GPM API</h3>
-                            <p>Projeto de Ciência Aberta da NASA. O sensor GPM é essencial para medir precipitação extrema (chuvas torrenciais) em zonas remotas.</p>
+                            <span class="badge-satelite">Integração Meteorológica</span>
+                            <h3>HG Weather</h3>
+                            <p>Fornece dados meteorológicos bem estruturados que são fundamentais para detectar quedas
+                                bruscas de temperatura, frentes frias e chuvas intensas causadoras de picos no
+                                adoecimento.</p>
                             <div class="detalhes-api">
                                 <div class="item-detalhe">
                                     <span class="rotulo-detalhe">Foco:</span>
-                                    <span class="valor-detalhe">Cólera e Leptospirose</span>
+                                    <span class="valor-detalhe">Precipitação e Umidade</span>
                                 </div>
                                 <div class="item-detalhe detalhe-coluna">
                                     <span class="rotulo-detalhe">Documentação:</span>
                                     <div class="grupo-botoes-doc">
-                                        <a href="https://power.larc.nasa.gov/api/pages/?urls.primaryName=Indicators" target="_blank" class="botao-doc">Acessar API</a>
+                                        <a href="https://power.larc.nasa.gov/api/pages/?urls.primaryName=Indicators"
+                                            target="_blank" class="botao-doc">Acessar API</a>
                                     </div>
                                 </div>
                             </div>
@@ -186,17 +203,19 @@
                         </div>
                         <div class="conteudo-api">
                             <span class="badge-satelite">Dados Nacionais</span>
-                            <h3>INPE - CPTEC & BDQueimadas</h3>
-                            <p>O Instituto Nacional de Pesquisas Espaciais fornece os modelos climáticos locais e o monitoramento em tempo real de focos de calor e fumaça.</p>
+                            <h3>INPE / CPTEC</h3>
+                            <p>O CPTEC (INPE) viabiliza a análise climática nacional. Seus dados ajudam o algoritmo
+                                preditivo a calcular a probabilidade de alteração com até 95% de precisão.</p>
                             <div class="detalhes-api">
                                 <div class="item-detalhe">
                                     <span class="rotulo-detalhe">Foco:</span>
-                                    <span class="valor-detalhe">Crises Respiratórias</span>
+                                    <span class="valor-detalhe">Previsão Escalonada Regional</span>
                                 </div>
                                 <div class="item-detalhe detalhe-coluna">
                                     <span class="rotulo-detalhe">Documentação:</span>
                                     <div class="grupo-botoes-doc">
-                                        <a href="https://servicos.cptec.inpe.br/XML/" target="_blank" class="botao-doc">Documentação XML</a>
+                                        <a href="https://servicos.cptec.inpe.br/XML/" target="_blank"
+                                            class="botao-doc">Documentação XML</a>
                                     </div>
                                 </div>
                             </div>
@@ -205,21 +224,24 @@
 
                     <div class="cartao-api glass">
                         <div class="imagem-api">
-                            <img src="../assets/charter.png" alt="Logo Space Charter">
+                            <img src="../assets/embrapa.png" alt="Logo Space Charter">
                         </div>
                         <div class="conteudo-api">
-                            <span class="badge-satelite">Resposta a Desastres</span>
-                            <h3>International Space Charter</h3>
-                            <p>Consórcio global que libera imagens de altíssima resolução imediatamente após grandes desastres naturais para ajudar na logística emergencial.</p>
+                            <span class="badge-satelite">Dados Agrometeorológicos</span>
+                            <h3>ClimAPI (Embrapa)</h3>
+                            <p>Serviço de dados da Embrapa ideal para cruzar eventos climáticos de extrema
+                                especificidade, analisando os impactos e anomalias na infraestrutura em nível
+                                microrregional.</p>
                             <div class="detalhes-api">
                                 <div class="item-detalhe">
-                                    <span class="rotulo-detalhe">Caso de Uso:</span>
-                                    <span class="valor-detalhe">Rotas de Última Milha</span>
+                                    <span class="rotulo-detalhe">Foco:</span>
+                                    <span class="valor-detalhe">Microrregiões e CEPs</span>
                                 </div>
                                 <div class="item-detalhe detalhe-coluna">
                                     <span class="rotulo-detalhe">Documentação (Sob demanda):</span>
                                     <div class="grupo-botoes-doc">
-                                        <a href="https://api.nasa.gov/" target="_blank" class="botao-doc">Acessar API</a>
+                                        <a href="https://www.agroapi.cnptia.embrapa.br/store/apis/info?name=ClimAPI&version=v1&provider=agroapi" target="_blank" class="botao-doc">Acessar
+                                            API</a>
                                     </div>
                                 </div>
                             </div>
@@ -229,7 +251,7 @@
             </div>
         </section>
 
-        
+
     </main>
 
     <footer class="rodape">
@@ -241,7 +263,7 @@
                 <h5>Navegação</h5>
                 <ul>
                     <li><a href="sobre.html">Sobre o Projeto</a></li>
-                    <li><a href="solucao.html">Solução</a></li>
+                    <li><a href="solucao.html">Solução SaaS</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </div>
@@ -258,4 +280,5 @@
 
     <script src="../js/main.js"></script>
 </body>
+
 </html>
