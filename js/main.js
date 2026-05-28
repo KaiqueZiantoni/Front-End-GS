@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
+
 
     const botaoMenuMobile = document.getElementById("botao-menu-mobile");
     const menuNavegacao = document.getElementById("menu-navegacao");
@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const setaDescer = document.querySelector('.seta-descer');
-    
+
     if (setaDescer) {
-        setaDescer.addEventListener('click', function(evento) {
+        setaDescer.addEventListener('click', function (evento) {
             evento.preventDefault();
             const idDestino = this.getAttribute('href');
             const secaoDestino = document.querySelector(idDestino);
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const simResultCard = document.getElementById("sim-result");
-    
+
     if (simResultCard) {
         const simulationData = {
             dengue: {
@@ -82,14 +82,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 simResultCard.style.opacity = "0.3";
                 simResultCard.style.transform = "scale(0.99)";
-                
+
                 setTimeout(() => {
                     displayTitle.textContent = data.title;
                     displaySource.textContent = data.source;
                     displayMetric.textContent = data.metric;
                     displayWindow.textContent = data.window;
                     displayAction.textContent = data.action;
-                    
+
                     simResultCard.style.opacity = "1";
                     simResultCard.style.transform = "none";
                 }, 150);
@@ -102,11 +102,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (botoesFaq.length > 0) {
         botoesFaq.forEach(botao => {
-            botao.addEventListener('click', function() {
+            botao.addEventListener('click', function () {
                 const itemAtual = this.parentElement;
-                
+
                 const respostaAtual = itemAtual.querySelector('.resposta-faq');
-                
+
                 itemAtual.classList.toggle('ativo');
 
                 if (itemAtual.classList.contains('ativo')) {
