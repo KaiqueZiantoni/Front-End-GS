@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+
     const botaoMenuMobile = document.getElementById("botao-menu-mobile");
     const menuNavegacao = document.getElementById("menu-navegacao");
 
