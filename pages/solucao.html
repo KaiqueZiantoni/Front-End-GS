@@ -73,7 +73,8 @@
                         <h3>Modelo AstroPharma Preditivo</h3>
                         <div class="indicador-status bom">Nossa Solução SaaS</div>
                         <p>Identificação de anomalias no microclima e cálculo da Janela Biológica, gerando alertas
-                            <strong>13 a 15 dias antes dos pacientes chegarem ao balcão.</strong></p>
+                            <strong>13 a 15 dias antes dos pacientes chegarem ao balcão.</strong>
+                        </p>
                         <ul class="lista-comparacao">
                             <li>Otimização financeira e logística do Supply Chain</li>
                             <li>Medicamento na gôndola antes do pico de demanda</li>
@@ -240,7 +241,8 @@
                                 <div class="item-detalhe detalhe-coluna">
                                     <span class="rotulo-detalhe">Documentação (Sob demanda):</span>
                                     <div class="grupo-botoes-doc">
-                                        <a href="https://www.agroapi.cnptia.embrapa.br/store/apis/info?name=ClimAPI&version=v1&provider=agroapi" target="_blank" class="botao-doc">Acessar
+                                        <a href="https://www.agroapi.cnptia.embrapa.br/store/apis/info?name=ClimAPI&version=v1&provider=agroapi"
+                                            target="_blank" class="botao-doc">Acessar
                                             API</a>
                                     </div>
                                 </div>
@@ -280,5 +282,18 @@
 
     <script src="../js/main.js"></script>
 </body>
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "de1cdd64-6703-4369-915d-bcf909e94d5d", // The ID of this integration.
+        region: "https://integrations.au-syd.assistant.watson.appdomain.cloud", // The region your integration is hosted in.
+        serviceInstanceID: "d0784087-3f76-4296-bfe4-04d1bd987635", // The ID of your service instance.
+        onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function () {
+        const t = document.createElement('script');
+        t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+    });
+</script>
 
 </html>
