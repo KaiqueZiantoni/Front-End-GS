@@ -86,7 +86,8 @@
                     </div>
                     <div class="cartao-estatistica">
                         <h3>Janela Biológica</h3>
-                        <p>A inteligência artificial calcula o tempo de latência de adoecimento da população, resultando em uma antecipação de 13 a 15 dias.</p>
+                        <p>A inteligência artificial calcula o tempo de latência de adoecimento da população, resultando
+                            em uma antecipação de 13 a 15 dias.</p>
                     </div>
                     <div class="cartao-estatistica">
                         <h3>Foco B2B e Princípio Ativo</h3>
@@ -155,5 +156,18 @@
 
     <script src="js/main.js"></script>
 </body>
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "de1cdd64-6703-4369-915d-bcf909e94d5d", // The ID of this integration.
+        region: "https://integrations.au-syd.assistant.watson.appdomain.cloud", // The region your integration is hosted in.
+        serviceInstanceID: "d0784087-3f76-4296-bfe4-04d1bd987635", // The ID of your service instance.
+        onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function () {
+        const t = document.createElement('script');
+        t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+    });
+</script>
 
 </html>
