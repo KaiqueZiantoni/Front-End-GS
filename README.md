@@ -20,6 +20,7 @@ O sistema utiliza IA para correlacionar eventos climáticos (monitorados via dad
 ├── pages/          # Páginas secundárias (sobre, solução, faq, integrantes)
 ├── index.html      # Página inicial
 └── README.md       # Documentação do projeto
+└──Assets/          #Imagens do projeto
 ``` 
 
 # Autor
