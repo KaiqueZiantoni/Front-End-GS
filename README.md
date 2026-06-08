@@ -24,13 +24,18 @@ O sistema utiliza IA para correlacionar eventos climáticos (monitorados via dad
 ``` 
 
 # Autor
-- Kaique Ziantoni Guedes Rosa        RM570294
+<img src="assets/foto-perfil.jpeg" alt="Foto Kaique" width="100" style="border-radius:50%">
+
+* **Kaique Ziantoni Guedes Rosa** 
+* **RM:** 570294 
+* **Turma:** 1TDSPV
 
 # Repositório GitHub 
 ```
 https://github.com/KaiqueZiantoni/Front-End-GS
 ```
-
+![Imagem pagina inicial - AstroPharma](assets/image.png)
+![Teste de JS - AstroPharma](assets/image-1.png)
 # Contato
 <a href="https://github.com/KaiqueZiantoni" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />

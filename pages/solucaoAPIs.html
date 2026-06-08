@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia e APIs | AstroPharma - Integração Orbital</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="caixa-principal nav-container">
+            <a href="../index.html" class="logo">
+                <span class="icone-logo">▲</span>
+                <span class="texto-logo">AstroPharma</span>
+            </a>
+            <button class="botao-menu-mobile" id="botao-menu-mobile" aria-label="Abrir Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="menu-navegacao" id="menu-navegacao">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="solucao.html">Solução</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="integrantes.html">Equipe</a></li>
+                    <li><a href="solucaoAPIs.html" class="ativo">Técnologia & APIs</a></li>
+                    <li><a href="contato.html" class="botao botao-pequeno botao-principal">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao">
+            <div class="caixa-principal">
+                <div class="texto-topo-sobre">
+                    <span class="etiqueta">Infraestrutura Tecnológica</span>
+                    <h1>Fontes de Dados Orbitais</h1>
+                    <p>Conheça as ferramentas e Open APIs de tecnologia espacial e meteorológica que alimentam o motor preditivo do AstroPharma na nuvem.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-apis">
+            <div class="caixa-principal">
+
+                <div class="caixa-alerta glass">
+                    <div class="icone-alerta">💡</div>
+                    <div class="texto-alerta">
+                        <strong>Nota de Arquitetura do Sistema (MVP):</strong> As Open APIs climáticas listadas abaixo
+                        alimentam o motor de integração do AstroPharma. Cruzando esses dados com a Janela Biológica,
+                        prevemos o comportamento de compra gerado por problemas de saúde.
+                    </div>
+                </div>
+
+                <div class="grade-apis">
+                    <div class="cartao-api glass">
+                        <div class="imagem-api">
+                            <img src="../assets/openWeather.png" alt="Logo OpenWeatherMap">
+                        </div>
+                        <div class="conteudo-api">
+                            <span class="badge-satelite">Monitoramento Global</span>
+                            <h3>OpenWeatherMap</h3>
+                            <p>API aberta de extrema importância que fornece dados precisos de telemetria climática
+                                global e regional, fundamentais para mapear variações drásticas e anomalias de
+                                microclima.</p>
+                            <div class="detalhes-api">
+                                <div class="item-detalhe">
+                                    <span class="rotulo-detalhe">Foco:</span>
+                                    <span class="valor-detalhe">Anomalias de Temperatura</span>
+                                </div>
+                                <div class="item-detalhe detalhe-coluna">
+                                    <span class="rotulo-detalhe">Documentação:</span>
+                                    <div class="grupo-botoes-doc">
+                                        <a href="https://documentation.dataspace.copernicus.eu/APIs/OData.html"
+                                            target="_blank" class="botao-doc">OData API</a>
+                                        <a href="https://documentation.dataspace.copernicus.eu/APIs/STAC.html"
+                                            target="_blank" class="botao-doc">STAC API</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cartao-api glass">
+                        <div class="imagem-api">
+                            <img src="../assets/HGweather.png" alt="Logo HG Weather">
+                        </div>
+                        <div class="conteudo-api">
+                            <span class="badge-satelite">Integração Meteorológica</span>
+                            <h3>HG Weather</h3>
+                            <p>Fornece dados meteorológicos bem estruturados que são fundamentais para detectar quedas
+                                bruscas de temperatura, frentes frias e chuvas intensas causadoras de picos no
+                                adoecimento.</p>
+                            <div class="detalhes-api">
+                                <div class="item-detalhe">
+                                    <span class="rotulo-detalhe">Foco:</span>
+                                    <span class="valor-detalhe">Precipitação e Umidade</span>
+                                </div>
+                                <div class="item-detalhe detalhe-coluna">
+                                    <span class="rotulo-detalhe">Documentação:</span>
+                                    <div class="grupo-botoes-doc">
+                                        <a href="https://power.larc.nasa.gov/api/pages/?urls.primaryName=Indicators"
+                                            target="_blank" class="botao-doc">Acessar API</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cartao-api glass">
+                        <div class="imagem-api">
+                            <img src="../assets/CPTEC.png" alt="Logo INPE / CPTEC">
+                        </div>
+                        <div class="conteudo-api">
+                            <span class="badge-satelite">Dados Nacionais</span>
+                            <h3>INPE / CPTEC</h3>
+                            <p>O CPTEC (INPE) viabiliza a análise climática nacional. Seus dados ajudam o algoritmo
+                                preditivo a calcular a probabilidade de alteração com até 95% de precisão.</p>
+                            <div class="detalhes-api">
+                                <div class="item-detalhe">
+                                    <span class="rotulo-detalhe">Foco:</span>
+                                    <span class="valor-detalhe">Previsão Escalonada Regional</span>
+                                </div>
+                                <div class="item-detalhe detalhe-coluna">
+                                    <span class="rotulo-detalhe">Documentação:</span>
+                                    <div class="grupo-botoes-doc">
+                                        <a href="https://servicos.cptec.inpe.br/XML/" target="_blank"
+                                            class="botao-doc">Documentação XML</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cartao-api glass">
+                        <div class="imagem-api">
+                            <img src="../assets/embrapa.png" alt="Logo Embrapa">
+                        </div>
+                        <div class="conteudo-api">
+                            <span class="badge-satelite">Dados Agrometeorológicos</span>
+                            <h3>ClimAPI (Embrapa)</h3>
+                            <p>Serviço de dados da Embrapa ideal para cruzar eventos climáticos de extrema
+                                especificidade, analisando os impactos e anomalias na infraestrutura em nível
+                                microrregional.</p>
+                            <div class="detalhes-api">
+                                <div class="item-detalhe">
+                                    <span class="rotulo-detalhe">Foco:</span>
+                                    <span class="valor-detalhe">Microrregiões e CEPs</span>
+                                </div>
+                                <div class="item-detalhe detalhe-coluna">
+                                    <span class="rotulo-detalhe">Documentação (Sob demanda):</span>
+                                    <div class="grupo-botoes-doc">
+                                        <a href="https://www.agroapi.cnptia.embrapa.br/store/apis/info?name=ClimAPI&version=v1&provider=agroapi"
+                                            target="_blank" class="botao-doc">Acessar API</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="caixa-principal grade-rodape">
+            <div class="info-rodape">
+                <div class="logo logo-rodape">
+                    <span class="icone-logo">▲</span>
+                    <span class="texto-logo">AstroPharma</span>
+                </div>
+                <p>Antecipando demandas de saúde através de inteligência artificial geoespacial.</p>
+            </div>
+            <div class="links-rodape">
+                <h5>Navegação</h5>
+                <ul>
+                    <li><a href="sobre.html">Sobre o Projeto</a></li>
+                    <li><a href="solucao.html">Solução SaaS</a></li>
+                    <li><a href="tecnologia.html">Tecnologia & APIs</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="contato-rodape">
+                <h5>Startup</h5>
+                <p>contato@astropharma.space</p>
+                <p><a href="integrantes.html">Conheça a Equipe</a></p>
+            </div>
+        </div>
+        <div class="fundo-rodape caixa-principal">
+            <p>&copy; 2026 AstroPharma. Desenvolvido para Global Solution FIAP.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "de1cdd64-6703-4369-915d-bcf909e94d5d",
+            region: "https://integrations.au-syd.assistant.watson.appdomain.cloud",
+            serviceInstanceID: "d0784087-3f76-4296-bfe4-04d1bd987635",
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+
+</html>
