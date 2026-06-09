@@ -122,5 +122,32 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+    const formContato = document.getElementById('form-contato');
+    const mensagemSucesso = document.getElementById('mensagem-sucesso');
+
+    if (formContato) {
+        formContato.addEventListener('submit', function(evento) {
+            evento.preventDefault();
+
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const organizacao = document.getElementById('organizacao').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
+
+            if (nome === '' || email === '' || organizacao === '' || mensagem === '') {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+            if (mensagemSucesso) {
+                mensagemSucesso.style.display = 'flex';
+            }
+            formContato.reset();
+            setTimeout(() => {
+                if (mensagemSucesso) {
+                    mensagemSucesso.style.display = 'none';
+                }
+            }, 5000);
+        });
+    }
 
 });
